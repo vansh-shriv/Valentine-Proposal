@@ -13,7 +13,6 @@ const Heart: React.FC<{ left: number; duration: number; size: number; delay: num
       width: `${size}px`,
       height: `${size}px`,
       animationDelay: `${delay}s`,
-      // @ts-ignore
       '--drift': `${drift}px`,
     } as React.CSSProperties}
   />

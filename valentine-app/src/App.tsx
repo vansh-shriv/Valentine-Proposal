@@ -21,7 +21,7 @@ const App: React.FC = () => {
       setShowConfetti(true);
       confettiPlayed.current = true;
       setTimeout(() => setShowConfetti(false), 2000);
-      setTimeout(() => setShowFinal(true), 20000); // Show final message after 20s
+      setTimeout(() => setShowFinal(true), 20000); 
     }
   }, [boxOpen]);
 

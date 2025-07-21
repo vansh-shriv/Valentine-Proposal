@@ -18,8 +18,7 @@ Triggers when she clicks "Yes!"
 💕 Floating Heart Animations
 Hearts float around the screen for extra charm
 
-🎶 Background music
-
+🎶 Background music(trying/For now not working)
 
 🛠️ Built With
 React
@@ -34,7 +33,6 @@ bash
 Copy code
 git clone https://github.com/vansh-shriv/Valentine-Proposal.git
 cd valentine-app
-
 npm install
 npm install lottie-react
 npm install lucide-react

@@ -20,11 +20,11 @@ const StartScreen: React.FC<Props> = ({ onYes }) => {
     const y = Math.random() * maxY;
 
     setNoButtonStyle({
-      position: 'fixed', // moves anywhere on screen
+      position: 'fixed',
       left: 0,
       top: 0,
       transform: `translate(${x}px, ${y}px) scale(1.1)`,
-      transition: 'transform 1s cubic-bezier(.34,1.56,.64,1)', // bounce easing
+      transition: 'transform 1s cubic-bezier(.34,1.56,.64,1)',
     });
   };
 
