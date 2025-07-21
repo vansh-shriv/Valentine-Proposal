@@ -1,0 +1,93 @@
+body {
+  background: #222;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+.background-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, #ffe6f0 60%, #ffb6d5 100%);
+}
+
+.app-bg {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  /* background: none; */
+}
+
+.floating-hearts-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1200;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.more-hearts-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1500;
+}
+
+.final-modal {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(255, 182, 213, 0.25);
+  display: flex; align-items: center; justify-content: center;
+}
+.final-modal-content {
+  background: #fff0f6;
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px #ffb6d5, 0 0 0 8px #ffe6f0;
+  padding: 2.5rem 3rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInPop 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.final-modal-message {
+  margin: 1.2rem 0;
+  font-size: 1.3rem;
+  color: #d72660;
+  font-weight: 600;
+  text-align: center;
+}
+.final-close-btn {
+  margin-top: 1.2rem;
+  background: linear-gradient(90deg, #ffb6d5 0%, #ffe6f0 100%);
+  color: #d72660;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 2.2rem;
+  box-shadow: 0 2px 12px #ffb6d5;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.final-close-btn:hover {
+  background: linear-gradient(90deg, #ffe6f0 0%, #ffb6d5 100%);
+  transform: scale(1.07) rotate(-2deg);
+}
+@keyframes fadeInPop {
+  0% { transform: scale(0.7); opacity: 0; }
+  80% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); }
+} 

@@ -1,0 +1,64 @@
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe6f0 60%, #ffb6d5 100%);
+  padding: 2rem 1rem;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  text-align: center;
+  font-family: 'Great Vibes',cursive;
+}
+.button-row {
+  position: relative; /* ❗ Needed for absolute button to move inside */
+  width: 400px;
+  height: 200px;
+  margin: 2rem auto;
+  border: 2px 
+}
+.yes-btn, .no-btn {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s, left 0.4s, top 0.4s, right 0.4s, bottom 0.4s, translate 0.4s;
+  box-shadow: 0 2px 12px #ffb6d5;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.yes-btn {
+  background: linear-gradient(90deg, #ff69b4 0%, #ffe6f0 100%);
+  color: white;
+}
+.yes-btn:hover {
+  background: linear-gradient(90deg, #ff1493 0%, #ffb6d5 100%);
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 4px 24px #ff69b4;
+}
+.no-btn {
+  background: #fff0f6;
+  color: #ff69b4;
+  position: relative;
+}
+.no-btn:hover {
+  background: #ffe6f0;
+  color: #ff1493;
+  box-shadow: 0 4px 24px #ffb6d5;
+  transform: scale(1.08) rotate(2deg);
+}
+@media (max-width: 600px) {
+  .button-row {
+    gap: 1.2rem;
+  }
+  .yes-btn, .no-btn {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+  }
+} 
