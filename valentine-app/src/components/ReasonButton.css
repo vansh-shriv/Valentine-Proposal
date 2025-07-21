@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-  z-index: 10;
 }
 .reason-btn {
   background: linear-gradient(90deg, #ffb6d5 0%, #ffe6f0 100%);

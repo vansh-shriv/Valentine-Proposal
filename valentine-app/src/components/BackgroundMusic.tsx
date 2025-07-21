@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import music from '../../public/valentine-music.mp3';
+import music from '../valentine-music.mp3';
 
 const BackgroundMusic: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
